@@ -1,0 +1,6 @@
+{
+  "name": "Wireframe iPhone 14",
+  "description": "Applicazione mobile wireframe in bianco e nero in formato iPhone 14 con navigazione a due pagine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
