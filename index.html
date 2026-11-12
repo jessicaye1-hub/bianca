@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe iPhone 14 - Mobile App</title>
-    <meta name="description" content="Applicazione mobile wireframe in bianco e nero in formato iPhone 14 con navigazione a due pagine." />
-    <meta property="og:title" content="Wireframe iPhone 14 - Mobile App" />
-    <meta property="og:description" content="Applicazione mobile wireframe in bianco e nero in formato iPhone 14 con navigazione a due pagine." />
+    <title>Wireframe iPhone 17 Pro Max - Mobile App</title>
+    <meta name="description" content="Applicazione mobile wireframe in bianco e nero in formato iPhone 17 Pro Max con navigazione a due pagine." />
+    <meta property="og:title" content="Wireframe iPhone 17 Pro Max - Mobile App" />
+    <meta property="og:description" content="Applicazione mobile wireframe in bianco e nero in formato iPhone 17 Pro Max con navigazione a due pagine." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -41,7 +41,7 @@
       }
 
       .wireframe-shadow-lg {
-        box-shadow: 10px 10px 0px 0px #000000;
+        box-shadow: 12px 12px 0px 0px #000000;
       }
 
       /* Transizioni slide tra le schermate */
@@ -81,10 +81,10 @@
         </div>
         <div>
           <h1 class="text-sm font-bold tracking-wider uppercase font-mono">
-            Wireframe Prototype · iPhone 14
+            Wireframe Prototype · iPhone 17 Pro Max
           </h1>
           <p class="text-xs text-neutral-500 font-mono">
-            Dimensioni: 390 × 844 px · Monocromatico B&amp;W · Standalone HTML
+            Display 6.9" · 440 × 956 px · Dynamic Island · Monocromatico B&amp;W
           </p>
         </div>
       </div>
@@ -96,10 +96,11 @@
           <span id="page-indicator">PAGINA 1 DI 2</span>
         </div>
 
-        <!-- Selettore Zoom / Scala -->
+        <!-- Selettore Zoom / Scala per il formato 956px Pro Max -->
         <div class="hidden sm:flex items-center border border-black divide-x divide-black bg-white">
-          <button id="zoom-75" class="px-2 py-1 hover:bg-neutral-100 transition-colors">75%</button>
-          <button id="zoom-90" class="px-2 py-1 bg-black text-white transition-colors">90%</button>
+          <button id="zoom-65" class="px-2 py-1 hover:bg-neutral-100 transition-colors">65%</button>
+          <button id="zoom-80" class="px-2 py-1 bg-black text-white transition-colors">80%</button>
+          <button id="zoom-95" class="px-2 py-1 hover:bg-neutral-100 transition-colors">95%</button>
           <button id="zoom-100" class="px-2 py-1 hover:bg-neutral-100 transition-colors">100%</button>
         </div>
 
@@ -112,8 +113,8 @@
           <span class="hidden md:inline">Griglia</span>
         </button>
 
-        <!-- Toggle Chassis Cornice iPhone -->
-        <button id="toggle-chassis" class="border border-black px-2.5 py-1 flex items-center gap-1.5 bg-black text-white transition-colors" title="Mostra/Nascondi cornice iPhone 14">
+        <!-- Toggle Chassis Cornice iPhone 17 Pro Max -->
+        <button id="toggle-chassis" class="border border-black px-2.5 py-1 flex items-center gap-1.5 bg-black text-white transition-colors" title="Mostra/Nascondi cornice iPhone 17 Pro Max">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="5" y="2" width="14" height="20" rx="3"/>
             <line x1="12" y1="18" x2="12" y2="18.01"/>
@@ -126,41 +127,47 @@
     <!-- Area Workspace / Artboard Wireframe -->
     <main id="canvas-area" class="flex-1 flex items-center justify-center p-4 sm:p-8 relative overflow-auto bg-wireframe-grid">
       <div class="absolute top-2 left-4 text-[10px] font-mono text-neutral-400 pointer-events-none hidden lg:block">
-        (X: 0, Y: 0) · Viewport Target: iPhone 14 [390 × 844 pt]
+        (X: 0, Y: 0) · Viewport Target: iPhone 17 Pro Max [440 × 956 pt · Bezel Ultra-Slim]
       </div>
 
       <!-- Wrapper Scalabile del Dispositivo -->
-      <div id="device-scaler" style="transform: scale(0.9); transform-origin: center center;" class="transition-transform duration-200 my-auto py-2">
+      <div id="device-scaler" style="transform: scale(0.8); transform-origin: center center;" class="transition-transform duration-200 my-auto py-2">
         
-        <!-- Scocca Esterna iPhone 14 (Chassis Wireframe) -->
-        <div id="iphone-chassis" class="relative mx-auto transition-all duration-300 w-[416px] h-[870px] bg-white border-4 border-black rounded-[54px] wireframe-shadow-lg p-[10px]">
+        <!-- Scocca Esterna iPhone 17 Pro Max (Chassis Wireframe Titanio) -->
+        <div id="iphone-chassis" class="relative mx-auto transition-all duration-300 w-[466px] h-[982px] bg-white border-4 border-black rounded-[58px] wireframe-shadow-lg p-[11px]">
           
-          <!-- Pulsanti fisici hardware wireframe sul profilo sinistro -->
-          <div id="btn-hardware-mute" class="absolute -left-[9px] top-[115px] w-[6px] h-[26px] bg-black rounded-l-sm"></div>
-          <div id="btn-hardware-volup" class="absolute -left-[9px] top-[160px] w-[6px] h-[50px] bg-black rounded-l-sm"></div>
-          <div id="btn-hardware-voldown" class="absolute -left-[9px] top-[225px] w-[6px] h-[50px] bg-black rounded-l-sm"></div>
+          <!-- Pulsanti fisici hardware wireframe di iPhone 17 Pro Max -->
+          <!-- Lato Sinistro: Tasto Azione (Action Button) -->
+          <div id="btn-hardware-action" class="absolute -left-[9px] top-[140px] w-[6px] h-[32px] bg-black rounded-l-sm" title="Tasto Azione"></div>
+          <!-- Lato Sinistro: Volume + e Volume - -->
+          <div id="btn-hardware-volup" class="absolute -left-[9px] top-[190px] w-[6px] h-[58px] bg-black rounded-l-sm" title="Volume +"></div>
+          <div id="btn-hardware-voldown" class="absolute -left-[9px] top-[260px] w-[6px] h-[58px] bg-black rounded-l-sm" title="Volume -"></div>
 
-          <!-- Pulsante accensione profilo destro -->
-          <div id="btn-hardware-power" class="absolute -right-[9px] top-[180px] w-[6px] h-[75px] bg-black rounded-r-sm"></div>
+          <!-- Lato Destro: Tasto Accensione / Blocco -->
+          <div id="btn-hardware-power" class="absolute -right-[9px] top-[210px] w-[6px] h-[80px] bg-black rounded-r-sm" title="Tasto Laterale"></div>
+          
+          <!-- Lato Destro: Controllo Fotocamera (Camera Control Button) tipico dei Pro di ultima generazione -->
+          <div id="btn-hardware-camera-control" class="absolute -right-[8px] top-[710px] w-[5px] h-[72px] bg-neutral-900 border-l border-white rounded-r-[2px]" title="Camera Control"></div>
 
-          <!-- Fessura altoparlante superiore -->
-          <div id="chassis-speaker" class="absolute top-[16px] left-1/2 -translate-x-1/2 w-[60px] h-[4px] bg-black rounded-full z-30"></div>
+          <!-- Fessura altoparlante auricolare sottilissima top bezel -->
+          <div id="chassis-speaker" class="absolute top-[16px] left-1/2 -translate-x-1/2 w-[70px] h-[3px] bg-black rounded-full z-30"></div>
 
-          <!-- Schermo Effettivo iPhone 14 (390px × 844px) -->
-          <div id="iphone-screen" class="w-[390px] h-[844px] bg-white overflow-hidden relative flex flex-col border-2 border-black rounded-[44px]">
+          <!-- Schermo Effettivo iPhone 17 Pro Max (440px × 956px) -->
+          <div id="iphone-screen" class="w-[440px] h-[956px] bg-white overflow-hidden relative flex flex-col border-2 border-black rounded-[48px]">
             
-            <!-- Notch iPhone 14 (Silhouette Wireframe Nera) -->
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[160px] h-[30px] bg-black rounded-b-[20px] z-30 flex items-center justify-center">
-              <div class="flex items-center gap-3">
-                <div class="w-2.5 h-2.5 rounded-full border border-neutral-600 bg-neutral-900"></div>
-                <div class="w-1.5 h-1.5 rounded-full bg-neutral-700"></div>
+            <!-- Dynamic Island iPhone 17 Pro Max (Pillola Wireframe Nera) -->
+            <div class="absolute top-[14px] left-1/2 -translate-x-1/2 w-[126px] h-[36px] bg-black rounded-full z-30 flex items-center justify-between px-3 select-none">
+              <!-- Fotocamera frontale e sensori Face ID -->
+              <div class="w-3 h-3 rounded-full border border-neutral-700 bg-neutral-950 flex items-center justify-center">
+                <div class="w-1 h-1 rounded-full bg-neutral-800"></div>
               </div>
+              <div class="w-2.5 h-2.5 rounded-full bg-neutral-900"></div>
             </div>
 
-            <!-- Barra di Stato iOS (9:41, Segnale, Wi-Fi, Batteria) -->
-            <div class="w-full h-[48px] px-7 pt-3.5 flex items-center justify-between text-black font-semibold text-xs tracking-tight z-20 shrink-0 select-none">
-              <span class="font-mono">9:41</span>
-              <div class="flex items-center gap-2">
+            <!-- Barra di Stato iOS iPhone 17 Pro Max (9:41, Segnale 5G, Wi-Fi 7, Batteria) -->
+            <div class="w-full h-[54px] px-8 pt-4 flex items-center justify-between text-black font-semibold text-xs tracking-tight z-20 shrink-0 select-none">
+              <span class="font-mono text-[13px] font-bold">9:41</span>
+              <div class="flex items-center gap-2.5">
                 <!-- Segnale cellulare -->
                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <path d="M2 20h2M7 20v-4M12 20v-8M17 20V4"/>
@@ -169,11 +176,11 @@
                 <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
                 </svg>
-                <!-- Batteria -->
+                <!-- Batteria con indicatore carica -->
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <rect x="2" y="7" width="16" height="10" rx="2"/>
                   <line x1="22" y1="11" x2="22" y2="13"/>
-                  <line x1="6" y1="11" x2="10" y2="11"/>
+                  <line x1="6" y1="11" x2="11" y2="11"/>
                 </svg>
               </div>
             </div>
@@ -184,14 +191,14 @@
               <!-- ======================================================== -->
               <!-- PAGINA 1: COMPLETAMENTE VUOTA, SOLO UN BOTTONE "avanti"   -->
               <!-- ======================================================== -->
-              <div id="pagina-1" class="screen-page active absolute inset-0 w-full h-full flex items-center justify-center p-6">
+              <div id="pagina-1" class="screen-page active absolute inset-0 w-full h-full flex items-center justify-center p-8">
                 <button
                   id="btn-avanti"
-                  class="group relative px-10 py-4 bg-white text-black font-mono font-bold text-lg tracking-wider uppercase border-2 border-black wireframe-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 flex items-center gap-3"
+                  class="group relative px-12 py-5 bg-white text-black font-mono font-bold text-lg tracking-wider uppercase border-2 border-black wireframe-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 flex items-center gap-3"
                   aria-label="Vai a Pagina 2"
                 >
                   <span>avanti</span>
-                  <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="w-5 h-5 transition-transform group-hover:translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                   </svg>
@@ -201,13 +208,13 @@
               <!-- ======================================================== -->
               <!-- PAGINA 2: COMPLETAMENTE VUOTA, SOLO UN BOTTONE "indietro" -->
               <!-- ======================================================== -->
-              <div id="pagina-2" class="screen-page hidden-right absolute inset-0 w-full h-full items-center justify-center p-6">
+              <div id="pagina-2" class="screen-page hidden-right absolute inset-0 w-full h-full items-center justify-center p-8">
                 <button
                   id="btn-indietro"
-                  class="group relative px-10 py-4 bg-white text-black font-mono font-bold text-lg tracking-wider uppercase border-2 border-black wireframe-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 flex items-center gap-3"
+                  class="group relative px-12 py-5 bg-white text-black font-mono font-bold text-lg tracking-wider uppercase border-2 border-black wireframe-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_#000000] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 flex items-center gap-3"
                   aria-label="Torna a Pagina 1"
                 >
-                  <svg class="w-5 h-5 transition-transform group-hover:-translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <svg class="w-5 h-5 transition-transform group-hover:-translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
                     <polyline points="12 19 5 12 12 5"></polyline>
                   </svg>
@@ -217,9 +224,9 @@
 
             </div>
 
-            <!-- Home Indicator Barra Inferiore iPhone 14 -->
-            <div class="w-full pb-3 flex justify-center z-20 shrink-0">
-              <div class="w-36 h-1 bg-black rounded-full"></div>
+            <!-- Home Indicator Barra Inferiore iPhone 17 Pro Max -->
+            <div class="w-full pb-3.5 flex justify-center z-20 shrink-0">
+              <div class="w-40 h-1 bg-black rounded-full"></div>
             </div>
 
           </div>
@@ -250,7 +257,7 @@
       </div>
     </footer>
 
-    <!-- Logica JavaScript Vanilla Integrata al 100% (Zero Moduli, Zero File Esterni) -->
+    <!-- Logica JavaScript Vanilla Integrata al 100% -->
     <script>
       (function() {
         // Elementi DOM principali
@@ -265,8 +272,9 @@
 
         // Controlli Zoom e Vista
         const deviceScaler = document.getElementById('device-scaler');
-        const zoom75 = document.getElementById('zoom-75');
-        const zoom90 = document.getElementById('zoom-90');
+        const zoom65 = document.getElementById('zoom-65');
+        const zoom80 = document.getElementById('zoom-80');
+        const zoom95 = document.getElementById('zoom-95');
         const zoom100 = document.getElementById('zoom-100');
         const toggleGrid = document.getElementById('toggle-grid');
         const toggleChassis = document.getElementById('toggle-chassis');
@@ -333,9 +341,10 @@
         });
 
         // Gestione Zoom
+        const zoomBtns = [zoom65, zoom80, zoom95, zoom100];
         function setZoom(scaleValue, activeBtn) {
           deviceScaler.style.transform = 'scale(' + scaleValue + ')';
-          [zoom75, zoom90, zoom100].forEach(function(b) {
+          zoomBtns.forEach(function(b) {
             if (b) {
               b.classList.remove('bg-black', 'text-white');
               b.classList.add('hover:bg-neutral-100');
@@ -347,8 +356,9 @@
           }
         }
 
-        if (zoom75) zoom75.addEventListener('click', function() { setZoom(0.75, zoom75); });
-        if (zoom90) zoom90.addEventListener('click', function() { setZoom(0.9, zoom90); });
+        if (zoom65) zoom65.addEventListener('click', function() { setZoom(0.65, zoom65); });
+        if (zoom80) zoom80.addEventListener('click', function() { setZoom(0.80, zoom80); });
+        if (zoom95) zoom95.addEventListener('click', function() { setZoom(0.95, zoom95); });
         if (zoom100) zoom100.addEventListener('click', function() { setZoom(1.0, zoom100); });
 
         // Toggle Griglia Sfondo
@@ -367,26 +377,27 @@
           }
         });
 
-        // Toggle Chassis Cornice iPhone 14
+        // Toggle Chassis Cornice iPhone 17 Pro Max
         toggleChassis.addEventListener('click', function() {
           isChassisVisible = !isChassisVisible;
           const hardwareBtns = [
-            document.getElementById('btn-hardware-mute'),
+            document.getElementById('btn-hardware-action'),
             document.getElementById('btn-hardware-volup'),
             document.getElementById('btn-hardware-voldown'),
             document.getElementById('btn-hardware-power'),
+            document.getElementById('btn-hardware-camera-control'),
             document.getElementById('chassis-speaker')
           ];
 
           if (isChassisVisible) {
-            iphoneChassis.className = 'relative mx-auto transition-all duration-300 w-[416px] h-[870px] bg-white border-4 border-black rounded-[54px] wireframe-shadow-lg p-[10px]';
-            iphoneScreen.classList.add('border-2', 'border-black', 'rounded-[44px]');
+            iphoneChassis.className = 'relative mx-auto transition-all duration-300 w-[466px] h-[982px] bg-white border-4 border-black rounded-[58px] wireframe-shadow-lg p-[11px]';
+            iphoneScreen.classList.add('border-2', 'border-black', 'rounded-[48px]');
             hardwareBtns.forEach(function(el) { if (el) el.style.display = 'block'; });
             toggleChassis.classList.add('bg-black', 'text-white');
             toggleChassis.classList.remove('bg-white', 'text-black');
           } else {
-            iphoneChassis.className = 'relative mx-auto transition-all duration-300 w-[390px] h-[844px] bg-white border-2 border-black wireframe-shadow p-0';
-            iphoneScreen.classList.remove('border-2', 'border-black', 'rounded-[44px]');
+            iphoneChassis.className = 'relative mx-auto transition-all duration-300 w-[440px] h-[956px] bg-white border-2 border-black wireframe-shadow p-0';
+            iphoneScreen.classList.remove('border-2', 'border-black', 'rounded-[48px]');
             hardwareBtns.forEach(function(el) { if (el) el.style.display = 'none'; });
             toggleChassis.classList.remove('bg-black', 'text-white');
             toggleChassis.classList.add('bg-white', 'text-black');
